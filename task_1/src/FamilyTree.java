@@ -20,14 +20,14 @@ public class FamilyTree {
         this.peopleList = peopleList;
     }
 
-    public void addPeople(People people){
+    public void addPeople(People people) {
         peopleList.add(people);
     }
 
-    public List<People> getPeopleLastName(String lastname){
+    public List<People> getPeopleLastName(String lastname) {
         List<People> res = new ArrayList<>();
-        for (People people: peopleList){
-            if (people.getLastname() == lastname){
+        for (People people : peopleList) {
+            if (people.getLastname() == lastname) {
                 res.add(people);
             }
         }
